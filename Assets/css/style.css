@@ -1,0 +1,340 @@
+/*fond d'écran placé pour mobile jusqu'à 768px */
+body{
+    /* position:absolute; */
+    background-color:#010101;
+    color: white;
+    background-image: url(../img/backgroundPages.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*dimension en pixel*/
+    background-size: 1218px 812px; 
+    /*coordonée fixes */
+    background-position: 27% 16vh;
+    /* overflow:hidden; */
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    color:white;
+}
+
+/*suppression des décorations sur les liens */
+a{
+    text-decoration: none;
+    color:white;
+}
+
+header a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*soulignement des span et active*/
+.underline{
+    color:white;
+    border-bottom: solid 2px #00D2FE;
+}
+
+.navbar-brand{
+    font-weight:bolder;
+    color: aliceblue;
+}
+
+.navbar-dark{
+    background-color: rgba(1,1,1,0.8);
+}
+
+/*position du bloc header en mobile*/
+header{
+    position:relative;
+    top:25vh;
+    transition: ease-in-out 0.3s;
+}
+
+.invisible{
+    visibility: hidden;
+    transition:all ease-in 0.2s;
+
+}
+
+.visible{
+    visibility:visible;
+    transition:all ease-in-out 0.2s;
+
+}
+
+/* couleur du lien dans la navbar collapse mobile */
+.active{
+    color:#f5f2f6 !important;
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight:600;
+    color: #b2ac3b;
+    
+}
+
+h2{
+    color:#706d6dd2;
+    font-size:20px;
+    font-weight: 500;
+    line-height: 1.5;
+
+}
+
+section h2:after{
+    content:"";
+    width:100px;
+    height: 1px;
+    display: inline-block;
+    background:#00D2FE;
+    margin-bottom: 4px;
+    margin-left: 10px;
+    color: white;
+
+}
+
+h3{
+    color:#87aab0f3;
+}
+
+h4{
+    font-family: "Raleway", sans-serif;
+    color:#939253;
+}
+
+/*taille et couleur de fonds des icones de lien sociaux*/
+#socialLink a{
+    font-size:18px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    /*on définit une taille fixe de block pour avoir des logos rond*/
+    height:43px;
+    width:45px;
+}
+
+#socialLink a:hover{
+    background: #00D2FE;
+    color:white;
+}
+
+
+/*mise en forme des marker de liste dans la description*/
+#description li::marker{
+    /* \0020 fait un espace, ne marche pas sur FF */
+    content:"> \0020";
+    color:#00D2FE;
+}
+
+/* paramètrage des background des différentes sections */
+.bg-black{
+    background-color:rgba(0,0,0,0.8);
+    /* backdropfilter pas visible sur mozzila sauf si on active gfx.webrender.all et layout.css.backdrop-filter.enabled*/
+    backdrop-filter: blur(6px);
+}
+
+.bg-lightblack{
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    
+}
+
+/*couleur pour les icones des compétences*/
+.bleu{
+    color:#119cb7;
+}
+
+.redLight{
+    color:#F09E1A;
+}
+
+/*Couleur de fond des progress bar*/
+.bg-blue{
+    background-color:#1b788b;
+}
+
+.bg-grey{
+    background-color:#424143;
+}
+
+.bg-orange{
+    background-color: #F09E1A;
+}
+
+/* couleur des icones d'interet */
+.darkBleu{
+    color:#e9ebf1;
+}
+
+.rouge{
+    color:#c7ea6f;
+}
+
+.jaune{
+    color:#FFD119;
+}
+
+.vert{
+    color:#0DFF5E;
+}
+
+/*Position du bloc main*/
+main{
+    position:relative;
+    top:100vh;
+}
+
+
+
+
+
+/* Mise en forme des lignes de la zone compétence */
+#skills li{
+    padding-bottom:2%;
+    list-style-type: none;
+}
+
+/*pour enlever le retrait des li dans les compétences */
+#skills ul{
+    padding:0;
+}
+/* rotation à 180° des barres de progress de languages en petit écran */
+.rotate{
+    transform:rotate(180deg); 
+    -ms-transform:rotate(180deg); /* IE 9 */ 
+    -moz-transform:rotate(180deg); /* Firefox */ 
+    -webkit-transform:rotate(180deg); /* Safari and Chrome */ 
+    -o-transform:rotate(180deg); /* Opera */ 
+}
+
+/* ajout de padding sur les sections pour passer en dessous de la navbar*/
+section{
+    padding-top: 50px !important;
+}
+
+/* taille des icones dans la section contact */
+#contact i{
+    font-size:20px;
+    margin-top: 10px;
+    color: rgb(232, 235, 237);
+}
+
+#contact a:hover{
+    text-decoration: none;
+    color:#2c4e89;
+}
+
+.bg-lightblackp-2 li 
+{
+    color: white;
+}
+/* positionnement desktop supérieur à 1200px*/
+body{
+    background-position: 12vw -0.5vh;
+}
+
+/*positionnement tablette paysage entre 992px et 1200px */
+body{
+    background-position: 18% 13%;
+}
+
+/*position du bloc header en tablette portrait*/
+header{
+    top:15vh;
+    right:25vw;
+}
+
+.navbar-brand{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+/*couleur des liens de la nav mobile*/ 
+/*couleur des liens de la nav*/
+nav a, .navbar.navbar-dark .navbar-nav .nav-item .nav-link{
+    color:#f0eded;
+}
+
+nav ul a:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover{
+    color:white;
+}
+
+/*mise en page de l'element actif*/
+.active, .navbar.navbar-dark .navbar-nav .nav-item .nav-link.active{
+    color:white !important;
+}
+
+.active:after{
+    visibility:visible;
+    width:30px;
+}
+
+/*barre en dessous des items de la navbar qui se dévoile sur le hover*/
+nav ul a::after{
+    display:block;
+    content: "";
+    position: relative;
+    height: 2px;
+    /* bottom: -4px; */
+    /* left: 0; */
+    background-color: #20c5e6;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+    
+nav ul a:hover:after{
+    visibility: visible;
+    width:30px;
+}
+
+/* suppression de la rotation des progress barre de language */
+.rotate{
+    transform:rotate(0deg); 
+    -ms-transform:rotate(0deg); /* IE 9 */ 
+    -moz-transform:rotate(0deg); /* Firefox */ 
+    -webkit-transform:rotate(0deg); /* Safari and Chrome */ 
+    -o-transform:rotate(0deg); /* Opera */ 
+
+}
+
+/* positionement tablette portrait entre 768px et 992px*/
+body{
+    background-size:inherit;
+    background-position:24% -2%;
+}
+
+/* header{
+    left:10vw;
+} */
+
+.bg-black{
+    /* backdropfilter pas visible sur mozzila sauf si on active gfx.webrender.all et layout.css.backdrop-filter.enabled*/
+    backdrop-filter: blur(8px);
+}
+
+.descriptionmoi {
+    color: white;
+}
+
+
+
+/* portfolio */
+
+.hatts {
+    width: 520px;
+    justify-content: space-between;
+}
+
+.hattsman {
+    width: 532px;
+}
+
+
+
+
