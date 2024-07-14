@@ -335,3 +335,62 @@ body{
     width: 532px;
 }
 
+@media screen and (max-width:768px) {
+        .hattsman{
+          width: 400px;  
+        }
+ }
+
+ @media screen and (max-width:490px) {
+    .hattsman{
+      width: 370px;  
+    }
+}
+
+@media screen and (max-width:460px) {
+    .hattsman{
+      width: 320px;  
+    }
+}
+
+@media screen and (max-width:410px) {
+    .hattsman{
+      width: 300px;  
+    }
+}
+
+@media screen and (max-width:388px) {
+    .hattsman{
+      width: 280px;  
+    }
+}
+
+@media screen and (max-width:367px) {
+    .hattsman{
+      width: 250px;  
+    }
+}
+
+@media screen and (max-width:338px) {
+    .hattsman{
+      width: 200px;  
+    }
+}
+
+@media screen and (max-width: 292px) {
+    .hattsman{
+      width: 150px;  
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .hattsman{
+      width: 90px;  
+    }
+}
+
+@media screen and (max-width:339px) {
+    .col-10{
+      font-size: 10px;  
+    }
+}
