@@ -19,6 +19,7 @@ body{
     color:white;
 }
 
+
 /*suppression des décorations sur les liens */
 a{
     text-decoration: none;
@@ -28,6 +29,7 @@ a{
 header a:hover{
     text-decoration: none;
     color: inherit;
+    text-align: center;
 }
 
 /*soulignement des span et active*/
@@ -39,6 +41,7 @@ header a:hover{
 .navbar-brand{
     font-weight:bolder;
     color: aliceblue;
+    text-align: center;
 }
 
 .navbar-dark{
@@ -326,24 +329,21 @@ body{
 
 /* portfolio */
 
-.hatts {
-    width: 520px;
-    justify-content: space-between;
-}
+
 
 .hattsman {
-    width: 532px;
+    width: 560px;
 }
 
 @media screen and (max-width:768px) {
         .hattsman{
-          width: 370px;  
+          width: 320px;  
         }
  }
 
  @media screen and (max-width:490px) {
     .hattsman{
-      width: 370px;  
+      width: 300px;  
     }
 }
 
