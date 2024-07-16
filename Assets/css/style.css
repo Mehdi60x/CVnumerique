@@ -19,7 +19,6 @@ body{
     color:white;
 }
 
-
 /*suppression des décorations sur les liens */
 a{
     text-decoration: none;
@@ -36,6 +35,7 @@ header a:hover{
 .underline{
     color:white;
     border-bottom: solid 2px #00D2FE;
+
 }
 
 .navbar-brand{
@@ -190,8 +190,9 @@ main{
     top:100vh;
 }
 
-
-
+ .underline1 .header {
+    color: #0DFF5E;
+}
 
 
 /* Mise en forme des lignes de la zone compétence */
@@ -327,12 +328,13 @@ body{
 
 
 
-/* portfolio */
+/* portfolio Responsive */ 
 
 
 
 .hattsman {
-    width: 560px;
+    width: 600px;
+   
 }
 
 @media screen and (max-width:768px) {
