@@ -142,7 +142,7 @@ h4{
 .bg-lightblack{
     background-color: rgba(255,255,255,0.1);
     color: white;
-    
+ 
 }
 
 /*couleur pour les icones des compétences*/
@@ -216,7 +216,7 @@ main{
 
 /* ajout de padding sur les sections pour passer en dessous de la navbar*/
 section{
-    padding-top: 50px !important;
+    padding-top: 50px;
 }
 
 /* taille des icones dans la section contact */
@@ -330,16 +330,20 @@ body{
 
 /* portfolio Responsive */ 
 
-
-
 .hattsman {
-    width: 600px;
+    width: 460px;
+    height: 260px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 3px solid rgb(132, 125, 122);
+    
    
 }
 
 @media screen and (max-width:768px) {
         .hattsman{
-          width: 320px;  
+          width: 330px;  
         }
  }
 
