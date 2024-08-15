@@ -319,7 +319,8 @@ body{
 
 .bg-black{
     /* backdropfilter pas visible sur mozzila sauf si on active gfx.webrender.all et layout.css.backdrop-filter.enabled*/
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
+
 }
 
 .descriptionmoi {
@@ -331,14 +332,9 @@ body{
 /* portfolio Responsive */ 
 
 .hattsman {
-    width: 460px;
-    height: 260px;
+    width: 450px;
     border-radius: 10px;
-    margin: auto;
-    margin-bottom: 20px;
-    border: 3px solid rgb(132, 125, 122);
-    
-   
+    border: 3px solid rgb(253, 253, 253);
 }
 
 @media screen and (max-width:768px) {
