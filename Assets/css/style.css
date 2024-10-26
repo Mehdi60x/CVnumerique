@@ -15,7 +15,7 @@ body{
 
 body{
     font-family: "Open Sans", sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
     color:white;
 }
 
@@ -34,7 +34,7 @@ header a:hover{
 /*soulignement des span et active*/
 .underline{
     color:white;
-    border-bottom: solid 2px #00D2FE;
+    border-bottom: solid 2px #08aaca;
 
 }
 
@@ -45,7 +45,7 @@ header a:hover{
 }
 
 .navbar-dark{
-    background-color: rgba(1,1,1,0.8);
+    background-color: black;
 }
 
 /*position du bloc header en mobile*/
@@ -81,10 +81,10 @@ h1{
 }
 
 h2{
-    color:#706d6dd2;
+    color: white;
     font-size:20px;
-    font-weight: 500;
-    line-height: 1.5;
+    font-weight: bold;
+    line-height: 2.5;
 
 }
 
@@ -93,7 +93,7 @@ section h2:after{
     width:100px;
     height: 1px;
     display: inline-block;
-    background:#c453d2;
+    background: white;
     margin-bottom: 4px;
     margin-left: 10px;
     color: white;
@@ -102,11 +102,13 @@ section h2:after{
 
 h3{
     color:#87aab0f3;
+    font-weight: bold;
 }
 
 h4{
     font-family: "Raleway", sans-serif;
     color:#939253;
+    font-weight: bold;
 }
 
 /*taille et couleur de fonds des icones de lien sociaux*/
@@ -335,8 +337,6 @@ body{
     width: 450px;
     border-radius: 10px;
     border: 3px solid rgb(253, 253, 253);
-
-
 }
 
 @media screen and (max-width:768px) {
