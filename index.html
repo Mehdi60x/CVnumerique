@@ -1,603 +1,258 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<header>
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
-<link rel="stylesheet" href="Assets/css/style.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehdi Hattaoui</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-
-  <!-- Bootstrap core CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Material Design Bootstrap -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-
-  <!-- feuille CSS Perso -->
-  <!-- smallscreen jusqu'à 768px -->
-  <link rel="stylesheet" href="assets/css/styleSm.css">
-
-  <!-- mediumscreen entre 768px et 992px -->
-  <link rel="stylesheet" href="assets/css/styleMd.css" media="screen and (min-width:768px)">
-
-  <!-- largescreen entre 992px et 1200px -->
-  <link rel="stylesheet" href="assets/css/styleLg.css" media="screen and (min-width:992px)">
-
-  <!-- xtraLargescreen supérieur à 1200px -->
-  <link rel="stylesheet" href="assets/css/styleXl.css" media="screen and (min-width:1200px)">
-
-
-  <title>CV Numérique - Mehdi HATTAOUI</title>
-</header>
-
-<body id="accueil">
-  <!--Navbar top-->
-  <nav class="navbar navbar-expand-lg fixed-top justify-content-between navbar-dark" style="display: none">
-
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#accueil" style="display: none">Mehdi HATTAOUI</a>
-
-
-    <!-- bouton de collapse -->
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarmobile"
-      aria-controls="navbarmobile" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon3"><span class="navbar-toggler-icon"></span></div>
-    </button>
-
-    <!-- contenu collapse -->
-    <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarmobile">
-
-      <!-- Liens -->
-      <ul class="navbar-nav">
-        <li class="nav-item ">
-          <a class="nav-link active" href="#accueil" id="link-accueil">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#about" id="link-about">A Propos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience" id="link-experience">Expérience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio" id="link-portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact" id="link-contact">Contact</a>
-        </li>
-      </ul>
-      <!-- Fin Liens -->
-
-    </div>
-    <!-- Fin contenu collapse -->
-
-  </nav>
-  <!--/.Navbar-->
-
-  <!-- Page d'accueil -->
-  <header id="header" class="text-center px-3">
-    <div class="container">
-
-      <!-- titre -->
-      
-      <h1 class="text-white">
-        <a href="index.html">Mehdi HATTAOUI</a>
-      </h1>
-      <h2>Développeur web et mobile</h2>
-
-      <!-- menu de navigation pour écran large -->
-      <nav class="d-none d-lg-block">
-        <ul class="nav justify-content-center center">
-          <li class="nav-item">
-            <a class="nav-link active" href="#accueil">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">A Propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Expériences</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Liens réseaux sociaux -->
-      <!-- github Linkedin discord strava -->
-      <div id="socialLink" class="py-3">
-        <a href="https://www.linkedin.com/in/el-mehdi-hattaoui-b91388283" class="py-2 m-1 d-inline-block"><i
-            class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Mehdi60x" class="py-2 m-1 d-inline-block"><i class="fab fa-github"></i></a>
-        <!-- <a href="#" class="p-3 m-1"><i class="fab fa-discord"></i></a> -->
-      </div>
-    </div>
+<body>
+  <header class="header">
+    <a href="#Home" class="logo">Mehdi <span>Hattaoui</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#home" class="active">home</a>
+      <a href="#experiences">Mon parcours</a>
+      <a href="#formation">Mes formations</a>
+      <a href="#porfolio">Mes projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
+  <!-- Section header ( je suis mehdi + icons + photo de moi) -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Salut, C'est <span>Mehdi</span></h1>
+      <h3 class="text-animation">Je suis <span></span></h3>
+      <p>Passionné par l'informatique et attiré par les possibilités infinies offertes par ce secteur, je suis
+        déterminé à faire carrière dans ce domaine dynamique et en constante évolution. Mon parcours atypique et
+        ma volonté de relever de nouveaux défis font de moi un développeur motivé,
+        prêt à contribuer au succès de projets innovants et à m'épanouir dans cette nouvelle voie.
+      </p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/el-mehdi-hattaoui-b91388283"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/Mehdi60x"><i class='bx bxl-github'></i></a>
+      </div>
+      <div class="btn-group">
+        <a href="#" class="btn">Hire</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
+    <div class="home-img">
+      <img src="Assets/mehdi.jpeg" alt="">
+    </div>
+  </section>
 
-  <main class="m-auto">
-    <!-- Section A Propos -->
-    <section id="about" class="container bg-black">
+  <!-- Section expériences professionnelles -->
+  <section class="experiences" id="experiences">
 
-      <!-- ligne de A propos -->
-      <div class="container">
-        <h2 class="p-3">A Propos</h2>
-        <div class="row justify-content-center">
+    <h2 class="heading">Expériences profesionnelles</h2>
 
-          <!-- Description de moi -->     
-         
-          <div id="description" class="descriptionmoi">
-            <h3>Développeur Web & Web Mobile</h3>
-            <p>Diplômé en développement web et web mobile, je viens de franchir une nouvelle étape dans ma vie professionnelle. 
-               Après avoir acquis de l'expérience en tant que conseiller client, j'ai choisi de me reconvertir dans le domaine du développement web. Passionné par l'informatique et attiré par les possibilités infinies offertes par ce secteur, je suis déterminé à faire carrière dans ce domaine dynamique et en constante évolution.
-               Mon parcours atypique et ma volonté de relever de nouveaux défis font de moi un développeur motivé, prêt à 
-               contribuer au succès de projets innovants et à m'épanouir dans cette nouvelle voie professionnelle. </p>
-            <ul>
-              <li>Age: 35</li>
-              <li>Permis: B</li>
-              <!-- Mon Email -->
-              <li>Email: mehdi.hattaoui@hotmail.com
-              <li>Téléphone: <a href="tel:07.66.10.79.52">07.66.10.79.52</a></li>
-            </ul>
-          </div>
+    <div class="timeline-items">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Juillet 2024 à Aujourd'hui</div>
+        <div class="timeline-content">
+          <h3>Conseiller vente télécommunication | Free</h3>
+          <p> Conseil à la clientèle et traitement des demandes clients <br>
+            Vente des mobiles , box internet et services free
+          </p>
         </div>
       </div>
-      <!-- fin ligne A Propos -->
-      
-      <!-- ligne Compétences -->
-      <div class="container" id="skills">
-        <h2 class="p-3">Compétences</h2>
-        <div class="row bg-lightblack">
 
-          <!-- Colone Outils -->
-          <div class="col-12 col-lg-4 pt-2">
-            <h3>Outils</h3>
-            <ul>
-      
-              <li><i class="fab fa-github bleu"></i> Github
-                <div class="progress bg-grey">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:55%"
-                    aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-              <li><i class="fab fa-trello bleu"></i> Trello
-                <div class="progress bg-grey">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:60%"
-                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-              <li><i class="fab fa-bootstrap bleu"></i> Bootstrap/MDB
-                <div class="progress bg-grey">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:45%"
-                    aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-              <li>
-                <i class="fab fa-wordpress bleu"></i> Wordpress
-                <div class="progress bg-grey">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:25%"
-                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-
-            </ul>
-          </div>
-          <!-- Fin Colone Outils -->
-
-          <!-- Début colone language -->
-          <div class="col-12 col-lg-4 text-right text-lg-left">
-            <h3>Langages</h3>
-            <ul>
-              <li>
-                <i class="fab fa-html5 bleu"></i> HTML5
-                <div class="progress bg-grey rotate">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:70%"
-                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-              <li>
-                <i class="fab fa-css3-alt bleu"></i> CSS3
-                <div class="progress bg-grey rotate">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:65%"
-                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-              <li><i class="fab fa-js-square bleu"></i> Javascript
-                <div class="progress bg-grey rotate">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:50%"
-                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-              <li><i class="fab fa-php bleu"></i> PHP
-                <div class="progress bg-grey rotate">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:30%"
-                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-              <li><i class="fas fa-database bleu"></i> SQL
-                <div class="progress bg-grey rotate">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:20%"
-                    aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-            </ul>
-
-            <h4 class="redLight">Objectif 2024/2025:</h4>
-            <ul>
-              <li><i class="fab fa-python redLight"></i> Python
-                <div class="progress bg-grey rotate">
-                  <div class="progress-bar progress-bar-striped bg-orange" role="progressbar" style="width:6%"
-                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-              <li><i class="fas fa-copyright redLight"></i> C++
-                <div class="progress bg-grey rotate">
-                  <div class="progress-bar progress-bar-striped bg-orange" role="progressbar" style="width:5%"
-                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-            </ul>
-
-          </div>
-          <!-- Fin colonne langage -->
-
-          <!-- Colone Transverse -->
-          <div class="col-12 col-lg-4">
-            <h3>Transverses</h3>
-            <ul>
-              <li>
-                <i class="fa fa-project-diagram bleu"></i> Gestion des Projets
-                <div class="progress bg-grey">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:20%"
-                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-              <li>
-                <i class="fa fa-pen bleu"></i> Rédaction de cahier des charges
-                <div class="progress bg-grey">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:80%"
-                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-              <li><i class="fa fa-cogs bleu"></i> Recrutement
-                <div class="progress bg-grey">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:75%"
-                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-              <li><i class="fa fa-eye bleu"></i> Veille technologique
-                <div class="progress bg-grey">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:65%"
-                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-              <li><i class="fa fa-hands-helping bleu"></i> Relationnel clients
-                <div class="progress bg-grey">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:70%"
-                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-              <li><i class="fa fa-atom bleu"></i> administration
-                <div class="progress bg-grey">
-                  <div class="progress-bar progress-bar-striped bg-blue" role="progressbar" style="width:90%"
-                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- Fin Colone transverse -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Octobre 2023 à Mars 2023</div>
+        <div class="timeline-content">
+          <h3>Stagiaire Développeur front-end | AM Solution</h3>
+          <p> Concevoir une maquette d’interface web <br>
+            Créer une page web responsive <br>
+            Créer un site web dynamique
+          </p>
         </div>
       </div>
-      <!-- Fin ligne Compétences -->
 
-      <!-- ligne interets -->
-      <div class="container interest">
-        <h2 class="p-3">Centres d'interêts</h2>
-        <div class="row justify-content-around p-4">
-          <div class="col-12 col-md-4 col-lg-3 border p-3 m-1 bg-lightblack"><i class="fa fa-running rouge fa-lg pr-2"></i>Running
-          </div>
-          <div class="col-12 col-md-4 col-lg-3 border p-3 m-1 bg-lightblack"><i class="fa fa-film" aria-hidden="true"></i> Cinéma</div>
-          <div class="col-12 col-md-4 col-lg-3 border p-3 m-1 bg-lightblack"><i class="fa fa-plane" aria-hidden="true"></i></i> Voyages
-          </div>
-          <div class="col-12 col-md-4 col-lg-3 border p-3 m-1 bg-lightblack"><i class="fas fa-lightbulb vert fa-lg pr-2"></i> Les Nouvelles
-            Technologies</div>
-          <div class="col-12 col-md-4 col-lg-3 border p-3 m-1 bg-lightblack"><i class="fas fa-book-open bleu fa-lg pr-2"></i> La Lecture
-          </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Août 2022 à Septembre 2022</div>
+        <div class="timeline-content">
+          <h3>Magasinier en pharmacie | Pharmacie Saintenoy</h3>
+          <p>Gestion des appels téléphoniques <br>
+            Gestion des stocks et
+            Mise en rayon
+          </p>
         </div>
       </div>
-      <!-- Fin ligne interets -->
-    </section>
-    <!-- Fin Section A Propos -->
 
-    <!-- Section expérience -->
-    <section id="experience" class="">
-      <div class="container">
-        <div class="row bg-black">
-      <!-- Colonne Expérience -->
-          <div class="col-12 col-lg-6 px-4">
-            <h2 class="p-3">Expériences</h2>
-            <!-- Free -->
-            <div class="bg-lightblack p-2">
-              <h3>Conseiller client Free</h3>
-              <p>Juillet 2024 à Aujourd'hui</p>
-              <div>
-                <h4>Free</h4>
-                <ul>
-                  <li>Gestion et suivi des dossiers</li>
-                  <li>Conseil clientèle</li>
-                  <li>Promotion des offres box et mobile</li>
-                  <li>Souscription des contrats</li>
-                </ul>
-              </div>
-            </div>
-            <!-- Opac de l'Oise -->
-            <div class="bg-lightblack p-2">
-              <h3>Conseiller immobilier location</h3>
-              <p>Décembre 2021 - Juin 2022</p>
-              <div>
-                <h4>Opac de l'Oise</h4>
-                <ul>
-                  <li>Gestion et suivi des dossiers locataire</li>
-                  <li>Visite et état des lieux des logements</li>
-                </ul>
-              </div>
-            </div>
 
-            <!-- Web-help -->
-            <div class="bg-lightblack p-2">
-              <h3>Conseiller commercial énergie</h3>
-              <p>Janvier 2021 - Juillet 2021</p>
-              <div>
-                <h4>Web-help</h4>
-                <ul>
-                  <li>Gestion des appels téléphoniques</li>
-                  <li>Gestion des mailings, souscription des contrats</li>
-                  <li>Traitement des demandes client et orientation</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Leroy Merlin-->
-            <div class="bg-lightblack p-2">
-              <h3>Conseiller client</h3>
-              <p>Janvier 2019 - Octobre 2020</p>
-              <div>
-                <h4>Leroy Merlin</h4>
-                <ul>
-                  <li>Accueil et définition des besoins</li>
-                  <li>Conseil de la clientèle</li>
-                  <li>Encaissement, Mise en rayon</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Pôle emploi -->
-            <div class="bg-lightblack p-2">
-              <h3>Conseiller emploi recrutement</h3>
-              <p>Juillet 2017 - Août 2018</p>
-              <div>
-                <h4>Pôle emploi</h4>
-                <ul>
-                  <li>Gestion des appels téléphoniques</li>
-                  <li>Rédaction des offres d'emploi</li>
-                  <li>Sourcing et recrutement</li>
-                  <li>Conduite d’entretien</li>
-                  <li>Veille Rh</li>
-                </ul>
-              </div>
-            </div>
-
-               <!-- Bienvenue immobilier -->
-               <div class="bg-lightblack p-2">
-                <h3>Conseiller client location</h3>
-                <p>Janvier 2016- Avril 2016</p>
-                <div>
-                  <h4>Agence Bienvenue immobilier</h4>
-                  <ul>
-                    <li>Accueil et définition des besoins</li>
-                    <li>Conseil de la clientèle</li>
-                    <li>Prospection physique et téléphonique</li>
-                    <li>Négociation clientèle des contrats</li>
-                    <li>Suivi clientèle</li>
-                  </ul>
-                </div>
-              </div>
-
-          </div>
-      <!-- Fin Colonne Expérience -->
-
-      <!-- Colonne Formation -->
-          <div class="col-12 col-lg-6 px-4">
-            <h2 class="p-3">Formations</h2>
-            <!-- La Manu -->
-            <div class="bg-lightblack p-2">
-              <h3>Bac+2 Développeur web et web mobile</h3>
-              <p>Février 2023 - Octobre 2023</p>
-              <div>
-                <h4>École supérieur des métiers du
-                  numérique (La Manu) </h4>
-                <ul>
-                  <li>Bac + 2 Développeur web et web mobile École supérieur des métiers du
-                    numérique La Manu RNCP311114</li>
-                  <li>Choisir le stack technique adapté à un projet</li>
-                  <li>Concevoir une maquette d’interface web</li>
-                  <li>Créer une base de données</li>
-                  <li>Sécuriser une application</li>
-                  <li>Créer une page web responsive</li>
-                  <li>Créer un site web dynamique></li>
-                </ul>
-              </div>
-            </div>
-
-               <!--Licence rh cnam  -->
-               <div class="bg-lightblack p-2">
-                <h3>Gestion des ressources humaines</h3>
-                <p>Septembre 2022 - Septembre 2023</p>
-                <div>
-                  <h4>Conservatoire national des arts et métiers </h4>
-                  <ul>
-                    <li>Licence Gestion des Ressources Humaines à distance </li>
-                    <li>Gestion des ressources humaines</li>
-                    <li>Droit du travail</li>
-                    <li>Gestion de la paie</li>
-                    <li>Marque employeur</li>
-                  </ul>
-                </div>
-              </div>
-
-            <!-- Bts nrc -->
-            <div class="bg-lightblack p-2">
-              <h3>Brevet de Technicien supérieur <br>Négociation relation client</h3>
-              <p>Septembre 2015 - Octobre 2016</p>
-              <div>
-                <h4>Lycée Boucher de Perthès - Abbeville</h4>
-                <ul>
-                  <li>Cibler et prospecter la clientèle</li>
-                  <li>Négocier et accompagner la relation-client</li>
-                  <li>Organiser et animer un événement commercial</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Bac pro MVA -->
-            <div class="bg-lightblack p-2">
-              <h3>Baccalauréat maintenance de véhicule automobile</h3>
-              <p>Septembre 2011 - Octobre 2014</p>
-              <div>
-                <h4>CFA CCI DE L’OISE </h4>
-                <ul>
-                  <li>Apprenti technicien automobile Volkswagen Audi</li>
-                  <li>Entretien des véhicules automobiles</li>
-                  <li>Technicité panne</li>
-                  <li>Conseil clientèle service entretien</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Fin colonne Formation -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Décembre 2021 à Mai 2022</div>
+        <div class="timeline-content">
+          <h3>Conseiller location | Opac de l’Oise</h3>
+          <p>Gestion et suivi des dossiers locataire <br>
+            Visite et état des lieux des logements
+          </p>
         </div>
       </div>
-    </section>
-    <!-- Porfolio -->
-    <section id="portfolio" class="portfolio1">
-      <div class="container bg-black">
-        <h2 class="p-3">Portfolio</h2>
-        <div class="row justify-content-around p-4">
-          <div class="colbg-lightblacktext-center">
-          <h4>Mes créations</h4>
-          
-          <a href="https://github.com/Mehdi60x/hattsbabyhaven"><img src="Assets/img/Hattsbabyhaven.png" alt="" class="hattsman"></a><br><br>
-          <a href="https://mehdi60x.github.io/Hattsmanparis/"><img src="Assets/img/Hattsmenparis.png" alt="" class="hattsman"></a><br><br>
-          <a href="https://mehdi60x.github.io/Hatt-s-Cars-Collection/"><img src="Assets/img/NineOneOne.png" alt="" class="hattsman"></a><br><br>
-          <a href="https://mehdi60x.github.io/Iphone-JS/"><img src="Assets/img/Pageiphone.png" alt="" class="hattsman"></a><br><br>
-          <a href="https://mehdi60x.github.io/Hatt-s-Travel.com/"><img src="Assets/img/Hattstravel.png" alt="" class="hattsman"></a><br><br>
-          
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Janvier 2021 à Juillet 2021</div>
+        <div class="timeline-content">
+          <h3>Conseiller commercial énergie | Web-help</h3>
+          <p>Gestion des appels téléphoniques <br>
+            Gestion des mailings, souscription des contrats <br>
+            Traitement des demandes client et orientation
+          </p>
         </div>
       </div>
- </div>
-    </section>
-    <!-- Section Contact -->
-    <section id="contact" class="">
-      <div class="container bg-black">
-        <h2 class="p-3">Contact</h2>
-        <div class="row justify-content-around p-4">
-        <!-- adresse -->
-          <div class="col-12 col-md-5 p-3 m-1 bg-lightblack">
-            <div class="row">
-              <div class="col-2 icon">
-              <i class="col-2 fa fa-map-marker-alt bleu fa-lg pr-2"></i>
-              </div> 
-              <div class="col-10">
-                <h4>Mon  adresse</h4>
-                <div><br>
-                  602 rue des Calendes 60400 Porquéricourt
-                </div>
-              </div>
-            </div>
-          </div>
-        <!-- CV -->
-          <div class="col-12 col-md-5 p-3 m-1 bg-lightblack">
-          <div class="row">
-            <div class="col-2">
-            <i class="col-2 fa fa-file-alt bleu fa-lg pr-2"></i>
-            </div> 
-            <div class="col-10">
-              <h4>Mon CV</h4><br>
-              <a href="Assets/img/CV CDA.pdf">Développeur Web et Web Mobile</a>
-            </div>
-          </div>
-          </div>          
-        <!-- réseaux sociaux -->
-          <div class="col-12 col-md-5 p-3 m-1 bg-lightblack">
-            <div class="row">
-              <div class="col-2">
-              <i class="col-2 fa fa-share-alt bleu fa-lg pr-2"></i>
-              </div> 
-              <div class="col-10">
-                <h4>Mes réseaux sociaux</h4>
-                <div id="contact-link">        
-                  <a href="https://www.linkedin.com/in/el-mehdi-hattaoui-b91388283" class="px-1 m-1"><i
-                  class="fab fa-linkedin"></i></a>
-                  <a href="https://github.com/Mehdi60x" class="px-1 m-1"><i class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        <!-- mail -->
-          <div class="col-12 col-md-5 p-3 m-1 bg-lightblack">
-            <div class="row">
-              <div class="col-2">
-              <i class="col-2 fa fa-envelope bleu fa-lg pr-2"></i>
-              </div> 
-              <div class="col-10">
-                <h4>Mon mail</h4>
-                <div>
-             <p>mehdi.hattaoui@hotmail.com</p>    
-                </div>
-              </div>
-            </div>
-          </div>
-        <!-- telephone -->
-          <div class="col-12 col-md-5 p-3 m-1 bg-lightblack">
-            <div class="row">
-              <div class="col-2">
-              <i class="col-2 fa fa-mobile-alt bleu fa-lg pr-2"></i>
-              </div> 
-              <div class="col-10">
-                <h4>Mon téléphone</h4>
-                <a href="tel:07.66.10.79.52">Port : 07.66.10.79.52</a>
-              </div>
-            </div>
-          </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Janvier 2019 à Octobre 2020</div>
+        <div class="timeline-content">
+          <h3>Conseiller client | Leroy Merlin</h3>
+          <p>Accueil et définition des besoins <br>
+            Conseil de la clientèle <br>
+            Encaissement, Mise en rayon
+          </p>
         </div>
       </div>
-    </section>
 
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Juillet 2017 à Août 2018</div>
+        <div class="timeline-content">
+          <h3>Conseiller emploi | Pôle emploi</h3>
+          <p>Gestion des appels téléphoniques <br>
+            Rédaction des annonces <br>
+            Sourcing et recrutement <br>
+            Conduite d’entretien <br>
+            Animation atelier pôle emploi
+        </div>
+      </div>
+  </section>
 
-  </main>
+  <!-- Section Diplôme -->
+  <section class="formation" id="formation">
+    <h2 class="heading">Formation</h2>
 
+    <div class="formation-container">
+      <div class="formation-box">
+        <div class="formation-info">
+          <h4>Admission en Bac + 3 Développeur Full Stack en alternance <br>I 2025 – 2026</h4>
+          <p>l’école des spécialistes du développement web (Cloud Campus) I https://cloud-
+            campus.fr/</p>
+        </div>
+      </div>
 
+      <div class="formation-box">
+        <div class="formation-info">
+          <h4>Bac + 2 Développeur web et web mobile <br>I 2023</h4>
+          <p>École supérieur des métiers du
+            numérique (La Manu) I Compiègne I RNCP311114 • Choisir le stack technique adapté
+            à un projet • Concevoir une maquette d’interface web • Créer une base de données •
+            Sécuriser une application • Créer une page web responsive • Créer un site web
+            dynamique</p>
+        </div>
+      </div>
 
-  <!-- JQuery -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
-  </script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-  <!-- Script JS Perso -->
-  <script src="./index.js"></script>
+      <div class="formation-box">
+        <div class="formation-info">
+          <h4>BTS Négociation relation client <br>I 2015 - 2016</h4>
+          <p>Lycée Boucher de Perthès –
+            Abbeville</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Porfolio -->
+
+  <section class="porfolio" id="porfolio">
+    <div class="porfolio-box">
+      <h2 class="heading">Mes Projets</h2>
+
+      <div class="wrapper">
+        <div class="porfolio-item">
+          <a href="https://mehdi60x.github.io/Hatt-s-Cars-Collection/"><img src="Assets/NineOneOne.png" alt=""></a>
+
+          <h2>Hatt's Prestige Car's</h2>
+          <div class="rating">
+          </div>
+          <p> Plongez dans l'élégance et l'audace avec notre sélection exquise de véhicules de luxe,
+            où chaque trajet devient une expérience inoubliable.</p>
+        </div>
+
+        <div class="porfolio-item">
+          <a href="https://github.com/Mehdi60x/hattsbabyhaven"><img src="Assets/Hattsbabyhaven.png" alt=""></a>
+
+          <h2>Hatt's Baby Haven</h2>
+          <div class="rating">
+          </div>
+          <p> Plongez dans un monde de tendresse<br>Découvrez notre sélection exclusive de produits pour bébés
+          </p>
+        </div>
+
+        <div class="porfolio-item">
+          <a href="https://mehdi60x.github.io/Iphone-JS/"><img src="Assets/Pageiphone.png" alt=""></a>
+
+          <h2>La révolution Iphone</h2>
+          <div class="rating">
+          </div>
+          <p> l'iPhone transforme chaque instant en un moment d'exception. Que vous soyez passionné de
+            photographie, amateur de jeux vidéo ou simplement à la recherche d'une technologie fiable et
+            sécurisée,
+            l'iPhone est fait pour vous.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Me contacter -->
+  <section class="contact" id="contact">
+    <h2 class="heading"><span>Me</span> Contacter</h2>
+
+    <form action="">
+      <div class="input-group">
+        <div class="input-box">
+          <input type="text" placeholder="Votre Nom">
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Numéro">
+          <input type="texy" placeholder="Sujet">
+        </div>
+      </div>
+      <div class="input-group-2">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+        <input type="submit" value="Envoyer" class="btn">
+      </div>
+    </form>
+  </section>
+
+  <!-- Section Footer -->
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/el-mehdi-hattaoui-b91388283"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://github.com/Mehdi60x"><i class='bx bxl-github'></i></a>
+    </div>
+    <ul class="list">
+      <li><a href="#home" class="active">home</a></li>
+      <li><a href="#experiences">Mon parcours</a></li>
+      <li><a href="#formation">Mes formations</a></li>
+      <li><a href="#porfolio">Mes projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="copyright">© Mehdi Hattoui Tous droits réservé</p>
+
+  </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>
