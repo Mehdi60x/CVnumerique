@@ -665,7 +665,7 @@ span {
     html {
         font-size: 55%;
     }
-    .services-container {
+    .formation-container {
         padding-bottom: 7rem;
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
@@ -693,7 +693,7 @@ span {
     .timeline-dot {
         left: 0;
     }
-    .services {
+    .formation {
         padding-bottom: 7rem;
     }
     .porfolio .wrapper {
@@ -752,15 +752,21 @@ span {
     .home-img img {
         width: 50vw;
     }
-    .services h2 {
+    .formation h2 {
         margin-bottom: 3rem;
     }
-    .services-container {
+    .formation-container {
         grid-template-columns: repeat(1,1fr);
-    }
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+        }
+    
     .timeline-item {
         margin-bottom: 40px;
         gap: 3rem;
-    
     }
 }
+
+
+
+
