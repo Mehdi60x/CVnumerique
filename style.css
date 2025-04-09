@@ -432,7 +432,7 @@ span {
 }
 
 .formation-box {
-    background-color: var(--main-color);
+    background-color: rgb(112, 180, 180);
     height: 350px;
     width: 350px;
     border-radius: 3rem;
