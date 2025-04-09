@@ -680,7 +680,7 @@ span {
         padding: 10rem 3% 2rem;
     }
     .timeline-items::before {
-        left: 7px;
+        left: 10px;
     }
     .timeline-item:nth-child(odd){
         padding-right: 0;
@@ -688,7 +688,7 @@ span {
     }
     .timeline-item:nth-child(odd), 
     .timeline-item:nth-child(even){
-        padding-left: 37px;
+        padding-left: 40px;
     }
     .timeline-dot {
         left: 0;
