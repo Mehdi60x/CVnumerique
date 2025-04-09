@@ -724,7 +724,7 @@ span {
         border-bottom: 2px solid var(--main-color);
         display: none;
     }
-    .navbar .active {
+    .navbar.active {
         display: block;
     }
     .navbar a {
