@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="style.css?v=13">
 </head>
 
 <body>
@@ -43,7 +43,7 @@
   </header>
   <!-- Section header ( je suis mehdi + icons + photo de moi) -->
   <section class="home" id="home">
-    <div class="equalizer" aria-hidden="true"></div>
+    <div class="starfield" aria-hidden="true"></div>
     <div class="home-content">
       <span class="badge reveal"><i class='bx bx-code-alt'></i> Concepteur Développeur d'Applications</span>
       <h1 class="reveal">Salut, C'est <span>Mehdi</span></h1>
@@ -68,8 +68,17 @@
     <div class="home-img reveal">
       <div class="home-img-glow"></div>
       <img src="Assets/img/PhotoCv2026.jpg" alt="Mehdi Hattaoui" class="home-photo">
-      <div class="globe" aria-hidden="true">
-        <span class="globe-ring"></span>
+      <div class="bot-wrap" aria-hidden="true">
+        <div class="bot">
+          <span class="bot-antenna"><span class="bot-antenna-tip"></span></span>
+          <div class="bot-visor">
+            <span class="bot-eye"><span class="bot-pupil"></span></span>
+            <span class="bot-eye"><span class="bot-pupil"></span></span>
+          </div>
+          <div class="bot-mouth"></div>
+        </div>
+        <span class="bot-ring"></span>
+        <span class="bot-orbit"><span class="bot-orbit-dot"></span></span>
       </div>
     </div>
     <a href="#experiences" class="scroll-cue" aria-label="Défiler vers la section suivante">
@@ -332,15 +341,20 @@
       <form action="" class="reveal card-3d">
         <div class="input-group">
           <div class="input-box">
-            <input type="text" placeholder="Votre Nom" required>
-            <input type="email" placeholder="Email" required>
+            <label for="contact-name" class="sr-only">Votre nom</label>
+            <input type="text" id="contact-name" name="name" placeholder="Votre Nom" required>
+            <label for="contact-email" class="sr-only">Votre email</label>
+            <input type="email" id="contact-email" name="email" placeholder="Email" required>
           </div>
           <div class="input-box">
-            <input type="tel" placeholder="Numéro">
-            <input type="text" placeholder="Sujet">
+            <label for="contact-phone" class="sr-only">Votre numéro de téléphone</label>
+            <input type="tel" id="contact-phone" name="phone" placeholder="Numéro">
+            <label for="contact-subject" class="sr-only">Sujet du message</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="Sujet">
           </div>
         </div>
         <div class="input-group-2">
+          <label for="message" class="sr-only">Votre message</label>
           <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
           <input type="submit" value="Envoyer" class="btn">
         </div>
@@ -369,7 +383,7 @@
     <p class="copyright">© Mehdi Hattaoui Tous droits réservé</p>
 
   </footer>
-  <script src="index.js?v=6"></script>
+  <script src="index.js?v=8"></script>
 </body>
 
 </html>

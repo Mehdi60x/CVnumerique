@@ -124,23 +124,58 @@ if (typedEl) {
     }
 }
 
-// Équaliseur animé en fond du hero
-let equalizer = document.querySelector('.equalizer');
-if (equalizer && !prefersReducedMotion) {
-    let barCount = 48;
-    for (let i = 0; i < barCount; i++) {
-        let bar = document.createElement('div');
-        bar.className = 'eq-bar' + (Math.random() < 0.08 ? ' bright' : '');
-        let duration = (1.4 + Math.random() * 1.8).toFixed(2);
-        let delay = (Math.random() * -3).toFixed(2);
-        let hMin = (0.08 + Math.random() * 0.15).toFixed(2);
-        let hMax = (0.5 + Math.random() * 0.5).toFixed(2);
-        bar.style.animationDuration = duration + 's';
-        bar.style.animationDelay = delay + 's';
-        bar.style.setProperty('--h-min', hMin);
-        bar.style.setProperty('--h-max', hMax);
-        equalizer.appendChild(bar);
+// Ciel nocturne étoilé en fond du hero
+let starfield = document.querySelector('.starfield');
+if (starfield) {
+    let starCount = prefersReducedMotion ? 60 : 130;
+    for (let i = 0; i < starCount; i++) {
+        let star = document.createElement('div');
+        let big = Math.random() < 0.1;
+        star.className = 'star' + (big ? ' big' : '');
+        star.style.left = (Math.random() * 100).toFixed(2) + '%';
+        star.style.top = (Math.random() * 100).toFixed(2) + '%';
+        if (prefersReducedMotion) {
+            star.style.animation = 'none';
+            star.style.opacity = (0.3 + Math.random() * 0.4).toFixed(2);
+        } else {
+            star.style.animationDuration = (1.6 + Math.random() * 3.2).toFixed(2) + 's';
+            star.style.animationDelay = (Math.random() * -4).toFixed(2) + 's';
+        }
+        starfield.appendChild(star);
     }
+
+    if (!prefersReducedMotion) {
+        let shootingCount = 3;
+        for (let i = 0; i < shootingCount; i++) {
+            let trail = document.createElement('div');
+            trail.className = 'shooting-star';
+            trail.style.top = (Math.random() * 50).toFixed(2) + '%';
+            trail.style.left = (40 + Math.random() * 55).toFixed(2) + '%';
+            trail.style.animationDuration = (4 + Math.random() * 5).toFixed(2) + 's';
+            trail.style.animationDelay = (Math.random() * -8).toFixed(2) + 's';
+            starfield.appendChild(trail);
+        }
+    }
+}
+
+// Agent IA interactif : les yeux suivent le curseur de la souris
+let botEl = document.querySelector('.bot');
+let botPupils = document.querySelectorAll('.bot-pupil');
+if (botEl && botPupils.length && !prefersReducedMotion && window.matchMedia('(pointer: fine)').matches) {
+    document.addEventListener('mousemove', (e) => {
+        let rect = botEl.getBoundingClientRect();
+        let cx = rect.left + rect.width / 2;
+        let cy = rect.top + rect.height / 2;
+        let dx = e.clientX - cx;
+        let dy = e.clientY - cy;
+        let dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        let reach = 3;
+        let px = (dx / dist) * reach;
+        let py = (dy / dist) * reach;
+        botPupils.forEach((pupil) => {
+            pupil.style.transform = 'translate(' + px.toFixed(1) + 'px, ' + py.toFixed(1) + 'px)';
+        });
+    });
 }
 
 // Parallax léger au mouvement de la souris dans le hero (desktop uniquement)
@@ -152,14 +187,14 @@ if (homeSection && homeImgEl && !prefersReducedMotion && window.matchMedia('(poi
         let x = (e.clientX - rect.left) / rect.width - 0.5;
         let y = (e.clientY - rect.top) / rect.height - 0.5;
         homeImgEl.style.transform = 'translate3d(' + (x * 18) + 'px, ' + (y * 18) + 'px, 0)';
-        if (equalizer) {
-            equalizer.style.transform = 'translate3d(' + (x * -10) + 'px, ' + (y * -6) + 'px, 0)';
+        if (starfield) {
+            starfield.style.transform = 'translate3d(' + (x * -10) + 'px, ' + (y * -6) + 'px, 0)';
         }
     });
 
     homeSection.addEventListener('mouseleave', () => {
         homeImgEl.style.transform = '';
-        if (equalizer) equalizer.style.transform = '';
+        if (starfield) starfield.style.transform = '';
     });
 }
 
