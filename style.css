@@ -287,10 +287,11 @@ h1, h2, h3, h4, .logo, .btn {
 .nav-cta {
     margin-left: 3.2rem;
     padding: 0.9rem 2.2rem !important;
-    background: var(--main-color);
+    background: linear-gradient(135deg, var(--main-light), var(--main-color) 70%);
     color: var(--on-accent) !important;
     border-radius: 99px;
     font-weight: 600;
+    box-shadow: 0 6px 18px -6px rgba(90, 168, 224, 0.55);
 }
 
 .nav-cta:hover {
@@ -795,12 +796,13 @@ span {
     display: inline-block;
     overflow: hidden;
     padding: 1.2rem 3rem;
-    background: var(--main-color);
+    background: linear-gradient(135deg, var(--main-light), var(--main-color) 70%);
     border-radius: 99px;
     font-size: 1.5rem;
     color: var(--on-accent);
     border: none;
     font-weight: 600;
+    box-shadow: 0 8px 24px -8px rgba(90, 168, 224, 0.55);
     transition: 0.25s ease-in-out;
     cursor: pointer;
 }
@@ -824,6 +826,7 @@ span {
 .btn:hover {
     filter: brightness(1.08);
     transform: translateY(-2px);
+    box-shadow: 0 12px 30px -8px rgba(90, 168, 224, 0.7);
 }
 
 .btn-group {
@@ -878,6 +881,34 @@ span {
     text-align: center;
     margin: 0 0 5rem;
     letter-spacing: -0.01em;
+}
+
+/* Mots-clés en dégradé sur les grands titres, pour un rendu plus premium */
+.heading span,
+.home-content h1 span,
+.logo span {
+    background: linear-gradient(135deg, var(--main-light), var(--main-color) 65%, var(--main-dim));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* Liseré lumineux en haut de chaque grande section, pour marquer la transition */
+.experiences::before,
+.formation::before,
+.skills::before,
+.porfolio::before,
+.contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: min(700px, 70%);
+    height: 1px;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, transparent, rgba(90, 168, 224, 0.5), transparent);
+    pointer-events: none;
 }
 
 /* Panneaux en verre dépoli sur fond sombre */
